@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
@@ -18,11 +19,15 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/sdlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/donationbtn"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:padding="10sp"
+        tools:ignore="TouchTargetSizeCheck">
 
         <TextView
             android:id="@+id/textView4"
@@ -43,13 +48,17 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/mdlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10sp"
         android:layout_marginBottom="10sp"
         android:background="@drawable/donationbtn"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:padding="10sp"
+        tools:ignore="TouchTargetSizeCheck">
 
         <TextView
             android:id="@+id/textView6"
@@ -70,11 +79,15 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lglayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/donationbtn"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="horizontal"
-        android:padding="10sp">
+        android:padding="10sp"
+        tools:ignore="TouchTargetSizeCheck">
 
         <TextView
             android:id="@+id/textView8"
@@ -111,5 +124,6 @@
         android:text="@string/popupwarning"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        tools:ignore="TextContrastCheck" />
 </LinearLayout>
